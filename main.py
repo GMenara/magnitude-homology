@@ -88,4 +88,38 @@ def magnitude_homology(g,lmax):
         return chains(a,b,l).homology(generators=False)
 
     return dict(((a,b,l),homology(a,b,l)) for a in g.vertices() for b in g.vertices() for l in range(lmax+1))
-    
+
+# STEP 4: pick a graph and compute magnitude homology
+
+#g = Graph([(1,2),(2,3),(3,4),(4,1),(3,1)])
+#g = graphs.CycleGraph(3)
+g = graphs.PetersenGraph()
+graph_name = "G"
+g.show()
+
+lmax = 6
+
+print(graph_name)
+print('lmax=', lmax)
+
+homology = magnitude_homology(g,lmax)
+print(homology)
+
+total_rank = dict(((k,l),0) for k in range(0,lmax+1) for l in range(0, lmax+1))
+
+print(total_rank)
+
+for s in g.vertices():
+    for t in g.vertices():
+        for l in range(lmax+1):
+            for degree, group in sorted(homology[s,t,l].items()): 
+                total_rank[degree,l] += group.rank()
+
+
+for l in range(0,lmax+1):
+    print(l,':')
+    for k in range(0,lmax+1):
+        if total_rank[k,l] != 0:
+            print(total_rank[k,l])
+        #else:
+        #    print('      ')  
