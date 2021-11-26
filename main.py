@@ -112,7 +112,7 @@ print(total_rank)
 for a in g.vertices():
     for b in g.vertices():
         for l in range(lmax+1):
-            for degree, group in sorted(homology[s,t,l].items()): 
+            for degree, group in sorted(homology[a,b,l].items()): 
                 total_rank[degree,l] += group.rank()
 
 
