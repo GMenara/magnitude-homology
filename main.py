@@ -60,7 +60,7 @@ def magnitude_homology(g,lmax):
         for b in g.vertices():
             for l in range(lmax+1):
                 for k in range(kmax+1):
-                    generators[(a,b,k,l)] = dict((tuple(p),i) for (i,p) in enumerate(generators[(s,t,k,l)]))
+                    generators[(a,b,k,l)] = dict((tuple(p),i) for (i,p) in enumerate(generators[(a,b,k,l)]))
     
     # STEP 2: define differentials (just like the usual definition)
     
@@ -109,8 +109,8 @@ total_rank = dict(((k,l),0) for k in range(0,lmax+1) for l in range(0, lmax+1))
 
 print(total_rank)
 
-for s in g.vertices():
-    for t in g.vertices():
+for a in g.vertices():
+    for b in g.vertices():
         for l in range(lmax+1):
             for degree, group in sorted(homology[s,t,l].items()): 
                 total_rank[degree,l] += group.rank()
