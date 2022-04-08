@@ -123,14 +123,13 @@ def bettiNumber(d_k, d_kplus1):
     finishRowReducing(B)
 
     dimKChains = A.shape[1]
-    print(dimKChains)
+    #print(dimKChains)
     kernelDim = dimKChains - numPivotCols(A)
-    print(kernelDim)
+    #print(kernelDim)
     imageDim = numPivotRows(B)
-    print(imageDim)
+    #print(imageDim)
 
     return kernelDim - imageDim
-
 
 bd0 = numpy.array([[0, 0, 0, 0, 0]])
 bd1 = numpy.array([[-1, -1, -1, -1, 0, 0, 0, 0], [1, 0, 0, 0, -1, -1, 0, 0],
@@ -140,7 +139,7 @@ bd2 = numpy.array([[1, 1, 0, 0], [-1, 0, 1, 0], [0, -1, -1, 0],
                    [0, 0, 1, 1], [0, 0, 0, 0]])
 bd3 = numpy.array([[-1], [1], [-1], [1]])
 
-print("Example complex from post")
+print("Toy example (tetrahedron + a cycle)")
 print(f"0th homology: {bettiNumber(bd0, bd1)}")
 print(f"1st homology: {bettiNumber(bd1, bd2)}")
 print(f"2nd homology: {bettiNumber(bd2, bd3)}")
