@@ -74,7 +74,7 @@ def bfs(adj: List[List[int]],
 
 # Function which prints all the paths from start to end
 def print_paths(adj: List[List[int]], n: int,
-                start: int, end: int) -> None:
+                start: int, end: int) -> int:
     paths = []
     path = []
     parent = [[] for _ in range(n)]
@@ -112,4 +112,5 @@ def print_paths(adj: List[List[int]], n: int,
 
 #src = 0
 #dest = 2
-#print_paths(adj, n, src, dest)
+#n= print_paths(adj, n, src, dest)
+#print(n)

@@ -15,6 +15,12 @@ def bdry(G, k, l, show=False, figwidth=15, hide_0=False, F_2=False):
     vtx = list(G.nodes())
     G_dist = nx.all_pairs_shortest_path_length(G)
 
+    adj = [[] for _ in range(len(vtx))]
+
+    for e in G.edges:
+        list(e)
+        all_shortest_paths.add_edge(adj, e[0], e[-1])
+
     #find (k+1)-tuples generating MC_{k,l}
     MC_kl = []
     for possible_chain in itertools.product(vtx, repeat=k + 1):  # ineffecient, but f- it
@@ -33,23 +39,14 @@ def bdry(G, k, l, show=False, figwidth=15, hide_0=False, F_2=False):
                     break
             if length == l:
                 MC_kl.append(possible_chain)
+                # add chain with multiplicity
+                mult = []
+                for i in range(k):
+                    mult.append(all_shortest_paths.print_paths(adj, len(vtx), possible_chain[i], possible_chain[i + 1]))
+                    if mult[i] != 1:
+                        MC_kl.extend([possible_chain] * (mult[i]-1))
+
     MC_kl.sort()
-
-    adj = [[] for _ in range(len(vtx))]
-
-    for e in G.edges:
-        list(e)
-        all_shortest_paths.add_edge(adj, e[0], e[-1])
-
-    #multiplicity = [[] for _ in range(MC_kl)]
-    for possible_chain in MC_kl:
-        mult = []
-        for i in range(k):
-            mult.append(all_shortest_paths.print_paths(adj, len(vtx), possible_chain[i], possible_chain[i+1]))
-            if mult[i]!=1:
-                MC_kl.extend([possible_chain]*mult[i])
-
-
     # print(MC_kl)
 
     # find k-tuples generating MC_{k-1,l}
@@ -69,21 +66,13 @@ def bdry(G, k, l, show=False, figwidth=15, hide_0=False, F_2=False):
                     break
             if length == l:
                 MC_k_1l.append(possible_chain)
+                # add chain with multiplicity
+                mult = []
+                for i in range(k-1):
+                    mult.append(all_shortest_paths.print_paths(adj, len(vtx), possible_chain[i], possible_chain[i + 1]))
+                    if mult[i] != 1:
+                        MC_k_1l.extend([possible_chain] * (mult[i]-1))
     MC_k_1l.sort()
-
-    adj = [[] for _ in range(len(vtx))]
-
-    for e in G.edges:
-        list(e)
-        all_shortest_paths.add_edge(adj, e[0], e[-1])
-
-    # multiplicity = [[] for _ in range(MC_kl)]
-    for possible_chain in MC_k_1l:
-        mult = []
-        for i in range(k-1):
-            mult.append(all_shortest_paths.print_paths(adj, len(vtx), possible_chain[i], possible_chain[i + 1]))
-            if mult[i] != 1:
-                MC_k_1l.extend([possible_chain]*mult[i])
 
     bdry_mtx = np.zeros((len(MC_k_1l), len(MC_kl)))
     for k_ch_idx in range(len(MC_kl)):
