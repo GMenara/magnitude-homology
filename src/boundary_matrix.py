@@ -6,7 +6,7 @@ from scipy.linalg import null_space
 from src import all_shortest_paths
 
 #
-# NEEDS FIXING!!! ADD MULTIPLICITY!!!
+# NEEDS FIXING!!! (k-1) tuple does not remember the vertex that was taken off)
 #
 #
 #
