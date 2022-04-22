@@ -6,14 +6,13 @@ from scipy.linalg import null_space
 from src import all_shortest_paths
 
 #
-# NEEDS FIXING!!! (k-1) tuple does not remember the vertex that was taken off)
+# NEEDS FIXING!!! (k-1) tuple does not remember the vertex that was taken off
 #
 #
 #
 
-def bdry(G, k, l, show=False, figwidth=15, hide_0=False, F_2=False):
+def bdry(G, k, l, show=False, figwidth=15):
     vtx = list(G.nodes())
-    G_dist = nx.all_pairs_shortest_path_length(G)
 
     adj = [[] for _ in range(len(vtx))]
 
@@ -76,7 +75,7 @@ def bdry(G, k, l, show=False, figwidth=15, hide_0=False, F_2=False):
 
     bdry_mtx = np.zeros((len(MC_k_1l), len(MC_kl)))
     for k_ch_idx in range(len(MC_kl)):
-        k_ch = MC_kl[k_ch_idx]
+        k_ch = MC_kl[k_ch_idx] # index the columns with elements of MC_kl
         for v_idx in range(1, len(k_ch) - 1):
             if nx.shortest_path_length(G, k_ch[v_idx - 1], k_ch[v_idx + 1]) == nx.shortest_path_length(G,k_ch[v_idx - 1],k_ch[v_idx]) + nx.shortest_path_length(G, k_ch[v_idx], k_ch[v_idx + 1]):
                 if tuple(np.delete(np.array(k_ch), v_idx)) in MC_k_1l:
