@@ -3,12 +3,8 @@ import networkx as nx
 import itertools
 import matplotlib.pyplot as plt
 from scipy.linalg import null_space
+from src import all_shortest_paths
 
-color_list=['#e6194B', '#3cb44b','#4363d8', '#ffe119', '#f58231', '#911eb4', '#42d4f4', '#f032e6',
-            '#bfef45', '#fabebe', '#469990', '#e6beff', '#9A6324', '#fffac8', '#800000', '#aaffc3',
-            '#808000', '#ffd8b1', '#e60075', '#a9a9a9']
-
-#
 #
 # NEEDS FIXING!!! ADD MULTIPLICITY!!!
 #
@@ -38,6 +34,22 @@ def bdry(G, k, l, show=False, figwidth=15, hide_0=False, F_2=False):
             if length == l:
                 MC_kl.append(possible_chain)
     MC_kl.sort()
+
+    adj = [[] for _ in range(len(vtx))]
+
+    for e in G.edges:
+        list(e)
+        all_shortest_paths.add_edge(adj, e[0], e[-1])
+
+    #multiplicity = [[] for _ in range(MC_kl)]
+    for possible_chain in MC_kl:
+        mult = []
+        for i in range(k):
+            mult.append(all_shortest_paths.print_paths(adj, len(vtx), possible_chain[i], possible_chain[i+1]))
+            if mult[i]!=1:
+                MC_kl.extend([possible_chain]*mult[i])
+
+
     # print(MC_kl)
 
     # find k-tuples generating MC_{k-1,l}
@@ -58,6 +70,20 @@ def bdry(G, k, l, show=False, figwidth=15, hide_0=False, F_2=False):
             if length == l:
                 MC_k_1l.append(possible_chain)
     MC_k_1l.sort()
+
+    adj = [[] for _ in range(len(vtx))]
+
+    for e in G.edges:
+        list(e)
+        all_shortest_paths.add_edge(adj, e[0], e[-1])
+
+    # multiplicity = [[] for _ in range(MC_kl)]
+    for possible_chain in MC_k_1l:
+        mult = []
+        for i in range(k-1):
+            mult.append(all_shortest_paths.print_paths(adj, len(vtx), possible_chain[i], possible_chain[i + 1]))
+            if mult[i] != 1:
+                MC_k_1l.extend([possible_chain]*mult[i])
 
     bdry_mtx = np.zeros((len(MC_k_1l), len(MC_kl)))
     for k_ch_idx in range(len(MC_kl)):

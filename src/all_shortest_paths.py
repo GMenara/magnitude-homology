@@ -90,9 +90,9 @@ def print_paths(adj: List[List[int]], n: int,
         v = reversed(v)
 
         # Print node for the current path
-        for u in v:
-            print(u, end=" ")
-        print()
+        #for u in v:
+            #print(u, end=" ")
+        #print()
     return len(paths)
 
 #
