@@ -3,8 +3,6 @@ import networkx as nx
 import itertools
 import matplotlib.pyplot as plt
 from scipy.linalg import null_space
-from src import all_shortest_paths
-
 #
 # NEEDS FIXING!!! (k-1) tuple does not remember the vertex that was taken off
 #
@@ -14,15 +12,9 @@ from src import all_shortest_paths
 def bdry(G, k, l, show=False, figwidth=15):
     vtx = list(G.nodes())
 
-    adj = [[] for _ in range(len(vtx))]
-
-    for e in G.edges:
-        list(e)
-        all_shortest_paths.add_edge(adj, e[0], e[-1])
-
     #find (k+1)-tuples generating MC_{k,l}
     MC_kl = []
-    for possible_chain in itertools.product(vtx, repeat=k + 1):  # ineffecient, but f- it
+    for possible_chain in itertools.product(vtx, repeat=k + 1):  # inefficient, but f- it
         # the following line was taken off because we are working with tuples, not paths, and so (0,1,2) \neq (2,1,0)
         # if possible_chain[0]<=possible_chain[-1]: #start with smaller label if flipped
         is_seq = True
@@ -41,7 +33,7 @@ def bdry(G, k, l, show=False, figwidth=15):
                 # add chain with multiplicity
                 mult = []
                 for i in range(k):
-                    mult.append(all_shortest_paths.print_paths(adj, len(vtx), possible_chain[i], possible_chain[i + 1]))
+                    mult.append(len(list(nx.all_shortest_paths(G, source=possible_chain[i], target=possible_chain[i + 1]))))
                     if mult[i] != 1:
                         MC_kl.extend([possible_chain] * (mult[i]-1))
 
@@ -50,7 +42,7 @@ def bdry(G, k, l, show=False, figwidth=15):
 
     # find k-tuples generating MC_{k-1,l}
     MC_k_1l = []
-    for possible_chain in itertools.product(vtx, repeat=k):  # ineffecient, but f- it
+    for possible_chain in itertools.product(vtx, repeat=k):  # inefficient, but f- it
         # if possible_chain[0]<=possible_chain[-1]: #start with smaller label if flipped
         is_seq = True
         for i in range(k - 1):
@@ -68,17 +60,22 @@ def bdry(G, k, l, show=False, figwidth=15):
                 # add chain with multiplicity
                 mult = []
                 for i in range(k-1):
-                    mult.append(all_shortest_paths.print_paths(adj, len(vtx), possible_chain[i], possible_chain[i + 1]))
+                    mult.append(len(list(nx.all_shortest_paths(G, source=possible_chain[i], target=possible_chain[i + 1]))))
                     if mult[i] != 1:
-                        MC_k_1l.extend([possible_chain] * (mult[i]-1))
-    MC_k_1l.sort()
+                        MC_k_1l.extend([possible_chain] * (mult[i] - 1))
+
+            MC_k_1l.sort()
 
     bdry_mtx = np.zeros((len(MC_k_1l), len(MC_kl)))
+    # index the columns with elements of MC_kl
     for k_ch_idx in range(len(MC_kl)):
-        k_ch = MC_kl[k_ch_idx] # index the columns with elements of MC_kl
+        k_ch = MC_kl[k_ch_idx]
         for v_idx in range(1, len(k_ch) - 1):
+            #if removing a vertex does not change the length of a path
             if nx.shortest_path_length(G, k_ch[v_idx - 1], k_ch[v_idx + 1]) == nx.shortest_path_length(G,k_ch[v_idx - 1],k_ch[v_idx]) + nx.shortest_path_length(G, k_ch[v_idx], k_ch[v_idx + 1]):
+                #if the k-tuple with the vertex removed is part of MC_{k-1,l}
                 if tuple(np.delete(np.array(k_ch), v_idx)) in MC_k_1l:
+                    #set the matrix entry to be -1
                     bdry_mtx[MC_k_1l.index(tuple(np.delete(np.array(k_ch), v_idx))), k_ch_idx] = (-1) ** v_idx
 
     #find dimension of kernel
