@@ -2,14 +2,14 @@ import numpy as np
 import networkx as nx
 import itertools
 import matplotlib.pyplot as plt
-from scipy.linalg import null_space
-#
-# NEEDS FIXING!!! (k-1) tuple does not remember the vertex that was taken off
-#
-#
-#
 
-def bdry(G, k, l, show=False, figwidth=15):
+from numpy.linalg import matrix_rank
+
+def bdry(G,
+         k: int,
+         l: int,
+         show=True,
+         figwidth=15):
     vtx = list(G.nodes())
 
     #find (k+1)-tuples generating MC_{k,l}
@@ -31,11 +31,12 @@ def bdry(G, k, l, show=False, figwidth=15):
             if length == l:
                 MC_kl.append(possible_chain)
                 # add chain with multiplicity
-                mult = []
-                for i in range(k):
-                    mult.append(len(list(nx.all_shortest_paths(G, source=possible_chain[i], target=possible_chain[i + 1]))))
-                    if mult[i] != 1:
-                        MC_kl.extend([possible_chain] * (mult[i]-1))
+                ## not really necessary
+                #mult = []
+                #for i in range(k):
+                #    mult.append(len(list(nx.all_shortest_paths(G, source=possible_chain[i], target=possible_chain[i + 1]))))
+                #    if mult[i] != 1:
+                #        MC_kl.extend([possible_chain] * (mult[i]-1))
 
     MC_kl.sort()
     # print(MC_kl)
@@ -58,15 +59,16 @@ def bdry(G, k, l, show=False, figwidth=15):
             if length == l:
                 MC_k_1l.append(possible_chain)
                 # add chain with multiplicity
-                mult = []
-                for i in range(k-1):
-                    mult.append(len(list(nx.all_shortest_paths(G, source=possible_chain[i], target=possible_chain[i + 1]))))
-                    if mult[i] != 1:
-                        MC_k_1l.extend([possible_chain] * (mult[i] - 1))
+                #mult = []
+                #for i in range(k-1):
+                #    mult.append(len(list(nx.all_shortest_paths(G, source=possible_chain[i], target=possible_chain[i + 1]))))
+                #    if mult[i] != 1:
+                #        MC_k_1l.extend([possible_chain] * (mult[i] - 1))
 
             MC_k_1l.sort()
 
     bdry_mtx = np.zeros((len(MC_k_1l), len(MC_kl)))
+    print(type(bdry_mtx))
     # index the columns with elements of MC_kl
     for k_ch_idx in range(len(MC_kl)):
         k_ch = MC_kl[k_ch_idx]
@@ -79,9 +81,9 @@ def bdry(G, k, l, show=False, figwidth=15):
                     bdry_mtx[MC_k_1l.index(tuple(np.delete(np.array(k_ch), v_idx))), k_ch_idx] = (-1) ** v_idx
 
     #find dimension of kernel
-    kernel = null_space(bdry_mtx)
-    dim_kernel = kernel.shape[1]
-    print('The dimension of the kernel of d_k for k=',k,'is',dim_kernel)
+    #kernel = null_space(bdry_mtx)
+    #dim_kernel = kernel.shape[1]
+    #print('The dimension of the kernel of d_k for k=',k,'is',dim_kernel)
 
     if show:
         show_mtx = bdry_mtx
@@ -97,4 +99,21 @@ def bdry(G, k, l, show=False, figwidth=15):
         plt.show()
         return
 
-    return bdry_mtx, MC_k_1l, MC_kl
+    return bdry_mtx #, MC_k_1l, MC_kl
+
+G=nx.cycle_graph(6)
+G.add_edge(1,3)
+
+k = 3
+l = 3
+
+d_k_1l= bdry(G, k-1, l, show=True, figwidth=15)
+print(type(d_k_1l))
+d_kl= bdry(G, k, l, show=True, figwidth=15)
+
+dim_kernel = d_k_1l.shape[1]- matrix_rank(d_k_1l)
+dim_image = matrix_rank(d_kl)
+betti = dim_kernel - dim_image
+print('The dimension of the kernel of d_k-1 for k=',k,'is',dim_kernel)
+print('The dimension of the rank of d_k for k=',k,'is',dim_image)
+print('betti_k is', betti)
