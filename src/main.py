@@ -7,18 +7,18 @@ G=nx.icosahedral_graph()
 #G=nx.cycle_graph(8)
 #G.add_edge(2,6)
 
-k = 3
+k = 2
 l = 2
 
-d_k_1l= boundary_matrix.bdry(G, k-1, l, show=False, figwidth=15)
 d_kl= boundary_matrix.bdry(G, k, l, show=False, figwidth=15)
+d_kplus1_l= boundary_matrix.bdry(G, k+1, l, show=False, figwidth=15)
 
-dim_kernel = d_k_1l.shape[1]- matrix_rank(d_k_1l)
-dim_image = matrix_rank(d_kl)
+dim_kernel = d_kl.shape[1]- matrix_rank(d_kl)
+dim_image = matrix_rank(d_kplus1_l)
 betti = dim_kernel - dim_image
-print('The dimension of the kernel of d_{k-1,l} for k,l=',k,l,'is',dim_kernel)
-print('The dimension of the rank of d_{k,l} for k,l=',k,l,'is',dim_image)
-print('betti_{k-1,l} for k,l=',k,l,'is', betti)
+print('The dimension of the kernel of d_{k,l} for k,l=',k,l,'is',dim_kernel)
+print('The dimension of the image of d_{k+1,l} for k,l=',k,l,'is',dim_image)
+print('betti_{k,l} for k,l=',k,l,'is', betti)
 
 ## Examples taken from Hepworth - Willerton paper "Categorifying the magnitude of a graph" arXiv:1505.04125v2
 #
