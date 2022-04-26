@@ -3,8 +3,11 @@ from numpy.linalg import matrix_rank
 
 from src import boundary_matrix, create_graph
 
-G=nx.cycle_graph(6)
+G=nx.cycle_graph(12)
 G.add_edge(1,3)
+G.add_edge(2,5)
+G.add_edge(3,7)
+G.add_edge(4,9)
 
 k = 3
 l = 3

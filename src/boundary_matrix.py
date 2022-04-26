@@ -14,7 +14,7 @@ def bdry(G,
 
     #find (k+1)-tuples generating MC_{k,l}
     MC_kl = []
-    for possible_chain in itertools.product(vtx, repeat=k + 1):  # inefficient, but f- it
+    for possible_chain in itertools.product(vtx, repeat=k + 1):
         # the following line was taken off because we are working with tuples, not paths, and so (0,1,2) \neq (2,1,0)
         # if possible_chain[0]<=possible_chain[-1]: #start with smaller label if flipped
         is_seq = True
@@ -43,7 +43,8 @@ def bdry(G,
 
     # find k-tuples generating MC_{k-1,l}
     MC_k_1l = []
-    for possible_chain in itertools.product(vtx, repeat=k):  # inefficient, but f- it
+    for possible_chain in itertools.product(vtx, repeat=k):
+    #for possible_chain in np.array(vtx)[np.rollaxis(np.indices((len(vtx),)*k),0,k+1).reshape(-1,k)]:
         # if possible_chain[0]<=possible_chain[-1]: #start with smaller label if flipped
         is_seq = True
         for i in range(k - 1):
