@@ -68,7 +68,12 @@ def bdry(G,
 
             MC_k_1l.sort()
 
-    bdry_mtx = np.zeros((len(MC_k_1l), len(MC_kl)))
+    if len(MC_k_1l)==0:
+        bdry_mtx = np.zeros((1, len(MC_kl)))
+    elif len(MC_kl)==0:
+        bdry_mtx = np.zeros((len(MC_k_1l), 1))
+    else:
+        bdry_mtx = np.zeros((len(MC_k_1l), len(MC_kl)))
 
     # index the columns with elements of MC_kl
     for k_ch_idx in range(len(MC_kl)):
