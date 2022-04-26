@@ -39,7 +39,6 @@ def bdry(G,
                 #        MC_kl.extend([possible_chain] * (mult[i]-1))
 
     MC_kl.sort()
-    # print(MC_kl)
 
     # find k-tuples generating MC_{k-1,l}
     MC_k_1l = []
@@ -86,11 +85,6 @@ def bdry(G,
                     #set the matrix entry to be -1
                     bdry_mtx[MC_k_1l.index(tuple(np.delete(np.array(k_ch), v_idx))), k_ch_idx] = (-1) ** v_idx
 
-    #find dimension of kernel
-    #kernel = null_space(bdry_mtx)
-    #dim_kernel = kernel.shape[1]
-    #print('The dimension of the kernel of d_k for k=',k,'is',dim_kernel)
-
     if show:
         show_mtx = bdry_mtx
 
@@ -103,6 +97,5 @@ def bdry(G,
         axes.set_yticks(np.arange(len(MC_k_1l)))
         axes.set_yticklabels(MC_k_1l)
         plt.show()
-        #return
 
     return bdry_mtx #, MC_k_1l, MC_kl
