@@ -3,15 +3,28 @@ from numpy.linalg import matrix_rank
 
 from src import boundary_matrix, create_graph
 
-G=nx.icosahedral_graph()
-#G=nx.cycle_graph(8)
-#G.add_edge(2,6)
+# G=nx.cycle_graph(8)
+# G.add_edge(2,6)
+# create_graph.graph(G)
 
-k = 2
-l = 2
+G = nx.erdos_renyi_graph(30, 0.1, seed=None, directed=False)
+create_graph.graph(G)
+
+k = 3
+l = 3
 
 d_kl= boundary_matrix.bdry(G, k, l, show=False, figwidth=15)
 d_kplus1_l= boundary_matrix.bdry(G, k+1, l, show=False, figwidth=15)
+
+#try:
+#    dim_kernel = d_kl.shape[1]- matrix_rank(d_kl)
+#except ValueError:
+#    dim_kernel = d_kl.shape[1]
+
+#try:
+#    dim_image = matrix_rank(d_kplus1_l)
+#except ValueError:
+#    dim_image = 0
 
 dim_kernel = d_kl.shape[1]- matrix_rank(d_kl)
 dim_image = matrix_rank(d_kplus1_l)
@@ -31,4 +44,3 @@ print('betti_{k,l} for k,l=',k,l,'is', betti)
 # 8. Moebius - Cantor --> OK
 # 9. Pappus --> OK
 # 10. Icosahedral --> OK
-

@@ -1,23 +1,28 @@
 import networkx as nx
+from src import boundary_matrix, create_graph
+import itertools
 
-n=4
-G=nx.cycle_graph(n)
-G.add_edge(1,3)
-G.add_edge(2,4)
+#n=4
+#G=nx.cycle_graph(n)
+#G.add_edge(1,3)
+#G.add_edge(2,4)
 
-#print(['The length of the path',path,'is',len(path), for path in nx.all_shortest_paths(G, source=0, target=2)])
+G = nx.erdos_renyi_graph(10, 0.15, seed=None, directed=False)
+create_graph.graph(G)
 
-#for counter, path in enumerate(nx.all_shortest_paths(G,source=0,target=2)):
-#    print('The length of the path',path,'is',len(path)-1)
+#for component in nx.connected_components(G):
+#    print(component.nodes())
 
-#print(counter+1)
+vtx_connected_component = []
+for v in nx.connected_components(G):
+    vtx = list(v)
+    vtx_connected_component.append(vtx)
 
-shortes_paths_between_two = []
-for i in G.nodes:
-    for j in G.nodes:
-        if j!=i:
-            shortest = list(nx.all_shortest_paths(G,i,j))
-            print('the s.ps. between',i,'and',j,'are',len(shortest))
-            shortes_paths_between_two.append(shortest)
-print(shortes_paths_between_two)
+print(vtx_connected_component)
+
+for component in vtx_connected_component:
+    possible_chain = itertools.product(component, repeat=3)
+    print(possible_chain)
+
+
 
