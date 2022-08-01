@@ -128,7 +128,7 @@ dv = Array{Int64}(undef,size_d_kl[1]+size_d_kl[2])
 for i in 1:size_d_kl[1]
     dv[i]=k
 end
-for i in size_d_kl[1]:size_d_kl[1]+size_d_kl[2]
+for i in size_d_kl[1]+1:size_d_kl[1]+size_d_kl[2]
     dv[i]=k+1
 end
 
