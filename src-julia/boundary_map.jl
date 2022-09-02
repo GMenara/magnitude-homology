@@ -77,11 +77,14 @@ function boundary(G, k, l)
     #println(length(MC_k_1l))
 
     if length(MC_k_1l)==0
+    #    bdry_mtx = ones(Int8,(1, length(MC_kl)))
         bdry_mtx = zeros((1, length(MC_kl)))
     elseif length(MC_kl)==0
+   #     bdry_mtx = ones(Int8,(length(MC_k_1l), 1))
         bdry_mtx = zeros((length(MC_k_1l), 1))
     else
-        bdry_mtx = zeros((length(MC_k_1l), length(MC_kl)))
+   #     bdry_mtx = ones(Int8,(length(MC_k_1l), length(MC_kl)))
+        bdry_mtx = zeros((length(MC_k_1l), length(MC_k_1l)+length(MC_kl)))
     end
 
     # index the columns with elements of MC_kl
@@ -100,16 +103,17 @@ function boundary(G, k, l)
                 if kminus1_chain in MC_k_1l
                     #println(kminus1_chain)
 
-                    #set the matrix entry to be -1
+                    #set the matrix entry to be 1
                     row_index = findfirst(x->x==kminus1_chain,MC_k_1l)
                     #println("want to change row:", row_index)
                     #println("want to change clmn:", k_chain_idx)
-                    bdry_mtx[row_index, k_chain_idx] = 1
+                    bdry_mtx[row_index, k_chain_idx + length(MC_k_1l)] = 1
                 end
             end
         end
     end
     #println("BM=",bdry_mtx)
+    #println(size(bdry_mtx))
     return bdry_mtx
 end
 
@@ -124,11 +128,11 @@ d_kl= boundary(graph, k, l)
 
 #define dv
 size_d_kl = size(d_kl)
-dv = Array{Int64}(undef,size_d_kl[1]+size_d_kl[2]) 
+dv = Array{Int64}(undef,size_d_kl[2]) 
 for i in 1:size_d_kl[1]
     dv[i]=k
 end
-for i in size_d_kl[1]+1:size_d_kl[1]+size_d_kl[2]
+for i in size_d_kl[1]+1:size_d_kl[2]
     dv[i]=k+1
 end
 
@@ -143,12 +147,16 @@ outfile = "dv.txt"
     
 
 #define fv
-fv = ones(1,size_d_kl[1]+size_d_kl[2])
+fv = ones(Int8,(1,size_d_kl[2]))
 
 S = sparse(d_kl)
+#println(S)
 rv = S.rowval
+#println(rv)
 cp = S.colptr
+#println(cp)
 
-C = eirene(rv=rv, cp=cp, dv=dv, fv=fv)
+C = eirene(rv=rv, cp=cp, dv=dv, fv=fv, maxdim=3)
 
-println(C)
+#println(C)
+println(barcode(C,dim=3))
