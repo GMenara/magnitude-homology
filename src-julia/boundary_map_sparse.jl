@@ -144,9 +144,10 @@ outfile = "dv.txt"
     
 
 rv = d_kl.rowval
-println(rv)
+#println(rv)
 cp = d_kl.colptr
-println(cp)
+push!(cp,last(cp))
+#println(cp, length(cp))
 
 C = eirene(rv=rv, cp=cp, dv=dv, fv=fv, maxdim=3)
 
