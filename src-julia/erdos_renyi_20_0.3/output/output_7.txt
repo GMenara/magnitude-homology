@@ -1,0 +1,13 @@
+homology of G for k=2 and l=2 is 0
+homology for MST_G k=2 and l=2 is 0
+
+
+homology of G for k=3 and l=3 is 44
+homology for MST_G k=3 and l=3 is 124
+
+
+homology of G for k=4 and l=4 is 5880
+homology for MST_G k=4 and l=4 is 1316
+
+
+
