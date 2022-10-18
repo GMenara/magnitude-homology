@@ -38,7 +38,7 @@ def bdry(G,
                 #    if mult[i] != 1:
                 #        MC_kl.extend([possible_chain] * (mult[i]-1))
 
-    #MC_kl.sort()
+    MC_kl.sort()
 
     # find k-tuples generating MC_{k-1,l}
     MC_k_1l = []
@@ -65,7 +65,7 @@ def bdry(G,
                 #    if mult[i] != 1:
                 #        MC_k_1l.extend([possible_chain] * (mult[i] - 1))
 
-    #MC_k_1l.sort()
+            MC_k_1l.sort()
 
     if len(MC_k_1l)==0:
         bdry_mtx = np.zeros((1, len(MC_kl)))
