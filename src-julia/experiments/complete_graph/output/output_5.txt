@@ -1,0 +1,16 @@
+homology of G for k=0 and l=0 is 6
+homology for MST_G k=0 and l=0 is 6
+
+
+homology of G for k=1 and l=1 is 30
+homology for MST_G k=1 and l=1 is 10
+
+
+homology of G for k=2 and l=2 is 150
+homology for MST_G k=2 and l=2 is 10
+
+
+homology of G for k=3 and l=3 is 750
+homology for MST_G k=3 and l=3 is 10
+
+
