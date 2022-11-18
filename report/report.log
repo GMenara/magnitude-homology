@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2022.9.1)  18 NOV 2022 09:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2022.9.1)  18 NOV 2022 09:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -367,12 +367,18 @@ n the tri-an-gle $(\OML/cmm/m/it/10 x[]; x[]; x[]\OT1/cmr/m/n/10 )$,
  []
 
 [4] [5] (report.aux)
-Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: 60968ECD3CA42CE0D45283C559175CFB;1707.
+
+Package rerunfilecheck Warning: File `report.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `report.out':
+(rerunfilecheck)             Before: E8DC283DBDF6BD83DE1F5E53BC5EB5D9;1719
+(rerunfilecheck)             After:  60968ECD3CA42CE0D45283C559175CFB;1707.
  ) 
 Here is how much of TeX's memory you used:
  8171 strings out of 478338
- 129887 string characters out of 2836701
+ 130139 string characters out of 2836701
  437559 words of memory out of 3000000
  26497 multiletter control sequences out of 15000+600000
  476860 words of font info for 54 fonts, out of 8000000 for 9000
@@ -398,7 +404,7 @@ TeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/giuli/AppData/Local/Prog
 rams/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/giuli/AppData/Lo
 cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/giuli/Ap
 pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on report.pdf (5 pages, 235036 bytes).
+Output written on report.pdf (5 pages, 235063 bytes).
 PDF statistics:
  191 PDF objects out of 1000 (max. 8388607)
  36 named destinations out of 1000 (max. 500000)
