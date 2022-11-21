@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2022.9.1)  18 NOV 2022 09:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2022.9.1)  21 NOV 2022 10:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -342,39 +342,33 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 101.
 
 [2]
-Overfull \hbox (42.8124pt too wide) in paragraph at lines 109--110
-[]\OT1/cmr/m/n/10 the num-ber of "re-peated" columns in-di-cates how many $(\OM
-L/cmm/m/it/10 k; k\OT1/cmr/m/n/10 )$-tuples $(\OML/cmm/m/it/10 x[]; :::; x[]; :
-::; x[]\OT1/cmr/m/n/10 )$
+Overfull \hbox (42.8124pt too wide) in paragraph at lines 110--111
+[]\OT1/cmr/m/n/10 the num-ber of ``re-peated" columns in-di-cates how many $(\O
+ML/cmm/m/it/10 k; k\OT1/cmr/m/n/10 )$-tuples $(\OML/cmm/m/it/10 x[]; :::; x[]; 
+:::; x[]\OT1/cmr/m/n/10 )$
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 132.
+(hyperref)                removing `math shift' on input line 133.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 132.
+(hyperref)                removing `subscript' on input line 133.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 132.
+(hyperref)                removing `math shift' on input line 133.
 
 [3]
-Overfull \hbox (9.1602pt too wide) in paragraph at lines 151--152
+Overfull \hbox (9.1602pt too wide) in paragraph at lines 152--153
 \OT1/cmr/m/n/10 That is, we are dis-re-gard-ing the tu-ples that do now con-tai
 n the tri-an-gle $(\OML/cmm/m/it/10 x[]; x[]; x[]\OT1/cmr/m/n/10 )$,
  []
 
 [4] [5] (report.aux)
-
-Package rerunfilecheck Warning: File `report.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `report.out':
-(rerunfilecheck)             Before: E8DC283DBDF6BD83DE1F5E53BC5EB5D9;1719
-(rerunfilecheck)             After:  60968ECD3CA42CE0D45283C559175CFB;1707.
+Package rerunfilecheck Info: File `report.out' has not changed.
+(rerunfilecheck)             Checksum: 60968ECD3CA42CE0D45283C559175CFB;1707.
  ) 
 Here is how much of TeX's memory you used:
  8171 strings out of 478338
@@ -404,7 +398,7 @@ TeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/giuli/AppData/Local/Prog
 rams/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/giuli/AppData/Lo
 cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/giuli/Ap
 pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on report.pdf (5 pages, 235063 bytes).
+Output written on report.pdf (5 pages, 235038 bytes).
 PDF statistics:
  191 PDF objects out of 1000 (max. 8388607)
  36 named destinations out of 1000 (max. 500000)
