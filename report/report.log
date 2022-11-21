@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2022.9.1)  21 NOV 2022 10:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2022.9.1)  21 NOV 2022 15:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -377,7 +377,7 @@ Here is how much of TeX's memory you used:
  26497 multiletter control sequences out of 15000+600000
  476860 words of font info for 54 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 72i,9n,77p,448b,576s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 72i,9n,77p,450b,576s stack positions out of 10000i,1000n,20000p,200000b,80000s
  <C:\Users\giuli\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
 1000.pk><C:/Users/giuli/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
 ts/cm/cmbx10.pfb><C:/Users/giuli/AppData/Local/Programs/MiKTeX/fonts/type1/publ
@@ -398,7 +398,7 @@ TeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/giuli/AppData/Local/Prog
 rams/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/giuli/AppData/Lo
 cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/giuli/Ap
 pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on report.pdf (5 pages, 235038 bytes).
+Output written on report.pdf (5 pages, 235031 bytes).
 PDF statistics:
  191 PDF objects out of 1000 (max. 8388607)
  36 named destinations out of 1000 (max. 500000)

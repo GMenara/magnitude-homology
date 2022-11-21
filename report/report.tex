@@ -106,7 +106,7 @@
 	Indeed, consider the following facts:
 	\begin{itemize}
 		\item the dimension of the kernel of our matrix $\Delta_{k,k}$ is equal to the number of all-zero columns plus the number of columns that are ``copies" of a previously written column.
-		\item the number of all-zero columns is (modulo automorphisms) equal to the number of triangles contained in the graph. This is because if a $(k,k)$-tuple $(x_0,x_1,...,x_k)$ is sent to zero after removing a vertex $x_i$, it means that the shortest path between $x_{i-1}$ and $x_{i+1}$ has length smaller than $2$. So there exists and edge $(x_{i-1},x_{i+1})$ and equivalently a triangle $(x_{i-1},x_i,x_{i+1})$.
+		\item the number of all-zero columns is (modulo automorphisms) equal to the number of triangles contained in the graph. This is because if a $(k,k)$-tuple $(x_0,x_1,...,x_k)$ is sent to zero it means that after removing any vertex $x_i$  the shortest path between $x_{i-1}$ and $x_{i+1}$ has length smaller than $2$. So there exists and edge $(x_{i-1},x_{i+1})$ and equivalently a triangle $(x_{i-1},x_i,x_{i+1})$.
 		\item the number of ``repeated" columns indicates how many $(k,k)$-tuples $(x_0,...,x_i,...,x_k)$ are sent to the same $(k-1,k)$-tuple $(x_0,...,\hat{x_i},...,x_k)$, and this provides us with upper and lower bounds for the number (modulo automorphisms) of $4$-cycles (EXPAND).
 	\end{itemize}
 	
