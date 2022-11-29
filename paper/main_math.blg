@@ -1,0 +1,52 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main_math.aux
+Reallocating 'name_of_file' (item size: 1) to 9 items.
+The style file: splncs04.bst
+Reallocating 'name_of_file' (item size: 1) to 13 items.
+Database file #1: bibliography.bib
+Warning--empty publisher in hatcher2005algebraic
+Warning--can't use both volume and number fields in leinster2019magnitude
+Warning--empty journal in wasserman1994social
+You've used 19 entries,
+            2850 wiz_defined-function locations,
+            720 strings with 7742 characters,
+and the built_in function-call counts, 11178 in all, are:
+= -- 976
+> -- 263
+< -- 26
++ -- 112
+- -- 90
+* -- 682
+:= -- 1363
+add.period$ -- 25
+call.type$ -- 19
+change.case$ -- 110
+chr.to.int$ -- 0
+cite$ -- 22
+duplicate$ -- 1009
+empty$ -- 1023
+format.name$ -- 105
+if$ -- 2497
+int.to.chr$ -- 0
+int.to.str$ -- 19
+missing$ -- 186
+newline$ -- 63
+num.names$ -- 38
+pop$ -- 333
+preamble$ -- 1
+purify$ -- 82
+quote$ -- 0
+skip$ -- 371
+stack$ -- 0
+substring$ -- 759
+swap$ -- 588
+text.length$ -- 26
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 74
+warning$ -- 3
+while$ -- 101
+width$ -- 21
+write$ -- 191
+(There were 3 warnings)

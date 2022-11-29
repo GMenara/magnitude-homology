@@ -1,0 +1,93 @@
+\begin{thebibliography}{10}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+\providecommand{\doi}[1]{https://doi.org/#1}
+
+\bibitem{angel2014dense}
+Angel, A., Koudas, N., Sarkas, N., Srivastava, D., Svendsen, M., Tirthapura,
+  S.: Dense subgraph maintenance under streaming edge weight updates for
+  real-time story identification. The VLDB journal  \textbf{23}(2),  175--199
+  (2014)
+
+\bibitem{belov2021graph}
+Belov, D.I., Wollack, J.A.: Graph theory approach to detect examinees involved
+  in test collusion. Applied Psychological Measurement  \textbf{45}(4),
+  253--267 (2021)
+
+\bibitem{gu2018graph}
+Gu, Y.: Graph magnitude homology via algebraic morse theory. arXiv preprint
+  arXiv:1809.07240  (2018)
+
+\bibitem{han2007identifying}
+Han, K., Cui, G., Chen, Y.: Identifying functional groups by finding cliques
+  and near-cliques in protein interaction networks. In: 2007 Frontiers in the
+  Convergence of Bioscience and Information Technologies. pp. 159--164. IEEE
+  (2007)
+
+\bibitem{hatcher2005algebraic}
+Hatcher, A.: Algebraic topology (2005)
+
+\bibitem{hepworth2015categorifying}
+Hepworth, R., Willerton, S.: Categorifying the magnitude of a graph. arXiv
+  preprint arXiv:1505.04125  (2015)
+
+\bibitem{kumar1999trawling}
+Kumar, R., Raghavan, P., Rajagopalan, S., Tomkins, A.: Trawling the web for
+  emerging cyber-communities. Computer networks  \textbf{31}(11-16),
+  1481--1493 (1999)
+
+\bibitem{leinster2013magnitude}
+Leinster, T.: The magnitude of metric spaces. Documenta Mathematica
+  \textbf{18},  857–905 (2013)
+
+\bibitem{leinster2019magnitude}
+Leinster, T.: The magnitude of a graph. In: Mathematical Proceedings of the
+  Cambridge Philosophical Society. vol.~166, pp. 247--264. Cambridge University
+  Press (2019)
+
+\bibitem{leinster2012measuring}
+Leinster, T., Cobbold, C.A.: Measuring diversity: the importance of species
+  similarity. Ecology  \textbf{93}(3),  477--489 (2012)
+
+\bibitem{leinster2021magnitude}
+Leinster, T., Shulman, M.: Magnitude homology of enriched categories and metric
+  spaces. Algebraic \& Geometric Topology  \textbf{21}(5),  2175--2221 (2021)
+
+\bibitem{sazdanovic2021torsion}
+Sazdanovic, R., Summers, V.: Torsion in the magnitude homology of graphs.
+  Journal of Homotopy and Related Structures  \textbf{16}(2),  275--296 (2021)
+
+\bibitem{sozio2010community}
+Sozio, M., Gionis, A.: The community-search problem and how to plan a
+  successful cocktail party. In: Proceedings of the 16th ACM SIGKDD
+  international conference on Knowledge discovery and data mining. pp. 939--948
+  (2010)
+
+\bibitem{wasserman1994social}
+Wasserman, S., Faust, K., et~al.: Social network analysis: Methods and
+  applications  (1994)
+
+\bibitem{watts1998collective}
+Watts, D.J., Strogatz, S.H.: Collective dynamics of ‘small-world’networks.
+  nature  \textbf{393}(6684),  440--442 (1998)
+
+\bibitem{yin2017local}
+Yin, H., Benson, A.R., Leskovec, J., Gleich, D.F.: Local higher-order graph
+  clustering. In: Proceedings of the 23rd ACM SIGKDD international conference
+  on knowledge discovery and data mining. pp. 555--564 (2017)
+
+\bibitem{zhang2012extracting}
+Zhang, Y., Parthasarathy, S.: Extracting analyzing and visualizing triangle
+  k-core motifs within networks. In: 2012 IEEE 28th international conference on
+  data engineering. pp. 1049--1060. IEEE (2012)
+
+\bibitem{zhao2012large}
+Zhao, F., Tung, A.K.: Large scale cohesive subgraphs discovery for social
+  network visual analysis. Proceedings of the VLDB Endowment  \textbf{6}(2),
+  85--96 (2012)
+
+\bibitem{zhu2020community}
+Zhu, J., Chen, B., Zeng, Y.: Community detection based on modularity and
+  k-plexes. Information Sciences  \textbf{513},  127--142 (2020)
+
+\end{thebibliography}
