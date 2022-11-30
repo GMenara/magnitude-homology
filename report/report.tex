@@ -20,6 +20,7 @@
 \newcommand{\E}{\mathbb{E}}
 \newcommand{\R}{\mathbb{R}}
 \newcommand{\Prob}{\mathrm{Pr}}
+\newcommand{\rank}{\mathrm{rank}}
 %`` ´´
 
 \title{Magnitude Homology - Report}
@@ -434,7 +435,12 @@
 	\leq T+S \leq
 	\left(3 \binom{n}{3}p^3 + n^{\frac{5}{2}}\right) + \left(4 \binom{n}{4}p^4 + n^{\frac{5}{2}}\right)
 	\]
-	and thus $T+S \sim 4p^4 + O(n^4)$ in these cases.
+	and thus $T+S \sim 4(np)^4 + O(n^{-1})$ in these cases.
+	The remaining cases influence the expected value by at most $4\exp\left(-\frac{1}{4}n\right)$. 
+	Hence we can conclude that
+	\[
+	T+S = \rank(PMH_{2,2}) \sim 4(np)^4 + O(n^{-1}).
+	\]
 	
 	
 	\section{Algorithm complexity}

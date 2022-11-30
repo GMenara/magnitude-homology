@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.8) (preloaded format=pdflatex 2021.11.9)  30 NOV 2022 15:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.8) (preloaded format=pdflatex 2021.11.9)  30 NOV 2022 15:55
 entering extended mode
 **./report.tex
 (report.tex
@@ -610,25 +610,25 @@ File: l3backend-pdftex.def 2021-08-04 L3 backend support: PDF output (pdfTeX)
 ) (report.aux)
 \openout1 = `report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-Package hyperref Info: Link coloring OFF on input line 28.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+Package hyperref Info: Link coloring OFF on input line 29.
 
 (C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -642,9 +642,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count301
 )
-LaTeX Info: Redefining \ref on input line 28.
-LaTeX Info: Redefining \pageref on input line 28.
-LaTeX Info: Redefining \nameref on input line 28.
+LaTeX Info: Redefining \ref on input line 29.
+LaTeX Info: Redefining \pageref on input line 29.
+LaTeX Info: Redefining \nameref on input line 29.
  (report.out) (report.out)
 \@outlinefile=\write4
 \openout4 = `report.out'.
@@ -675,12 +675,12 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-LaTeX Font Info:    Trying to load font information for U+msa on input line 31.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 32.
 
  (C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 31.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 32.
 
  (C:\Users\Utente\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -690,62 +690,62 @@ LaTeX Warning: No \author given.
 
 
 LaTeX Warning: Citation `leinster2019magnitude' on page 1 undefined on input li
-ne 40.
+ne 41.
 
 
 LaTeX Warning: Citation `hepworth2015categorifying' on page 1 undefined on inpu
-t line 47.
+t line 48.
 
 [1
 
 {C:/Users/Utente/AppData/Local/MiKTeX/pdftex/config/pdftex.map}]
 
 LaTeX Warning: Citation `hepworth2015categorifying' on page 2 undefined on inpu
-t line 81.
+t line 82.
 
 
 LaTeX Warning: Citation `hatcher2005algebraic' on page 2 undefined on input lin
-e 81.
+e 82.
 
 [2]
 <images/kernel_toy_example.png, id=93, 878.8032pt x 169.8345pt>
 File: images/kernel_toy_example.png Graphic file (type png)
 <use images/kernel_toy_example.png>
-Package pdftex.def Info: images/kernel_toy_example.png  used on input line 129.
+Package pdftex.def Info: images/kernel_toy_example.png  used on input line 130.
 
 (pdftex.def)             Requested size: 395.4578pt x 76.4248pt.
 
-Overfull \hbox (24.22726pt too wide) in paragraph at lines 128--130
+Overfull \hbox (24.22726pt too wide) in paragraph at lines 129--131
 []  [] 
  []
 
 
 LaTeX Warning: Citation `hepworth2015categorifying' on page 3 undefined on inpu
-t line 177.
+t line 178.
 
 [3 <./images/kernel_toy_example.png>]
 
 LaTeX Warning: Citation `hepworth2015categorifying' on page 4 undefined on inpu
-t line 206.
+t line 207.
 
 
 LaTeX Warning: Citation `leinster2021magnitude' on page 4 undefined on input li
-ne 206.
+ne 207.
 
 [4] [5]
 <images/kernel_toy_example_plain.png, id=119, 884.5848pt x 320.1561pt>
 File: images/kernel_toy_example_plain.png Graphic file (type png)
 <use images/kernel_toy_example_plain.png>
 Package pdftex.def Info: images/kernel_toy_example_plain.png  used on input lin
-e 276.
+e 277.
 (pdftex.def)             Requested size: 353.82764pt x 128.06017pt.
 
-Overfull \hbox (8.82764pt too wide) in paragraph at lines 276--277
+Overfull \hbox (8.82764pt too wide) in paragraph at lines 277--278
  [][] 
  []
 
 [6 <./images/kernel_toy_example_plain.png>]
-Overfull \hbox (1.98529pt too wide) in paragraph at lines 313--314
+Overfull \hbox (1.98529pt too wide) in paragraph at lines 314--315
 \OT1/cmr/m/n/10 ments $(\OML/cmm/m/it/10 x[]; []; x[]; x[]\OT1/cmr/m/n/10 ) \OM
 S/cmsy/m/n/10 2 \OML/cmm/m/it/10 PMC[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 G\OT1/c
 mr/m/n/10 )$ such that $\OML/cmm/m/it/10 `\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x[]
@@ -754,46 +754,46 @@ mr/m/n/10 )$ such that $\OML/cmm/m/it/10 `\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x[]
  []
 
 
-Overfull \hbox (6.10466pt too wide) in paragraph at lines 313--314
+Overfull \hbox (6.10466pt too wide) in paragraph at lines 314--315
 \OT1/cmr/m/n/10 That is, we are dis-re-gard-ing the tu-ples that do not con-tai
 n the tri-an-gle $(\OML/cmm/m/it/10 x[]; x[]; x[]\OT1/cmr/m/n/10 )$,
  []
 
 
 LaTeX Warning: Citation `hepworth2015categorifying' on page 7 undefined on inpu
-t line 322.
+t line 323.
 
 
 LaTeX Warning: Citation `wasserman1994social' on page 7 undefined on input line
- 344.
+ 345.
 
 
 LaTeX Warning: Citation `watts1998collective' on page 7 undefined on input line
- 344.
+ 345.
 
 [7] [8]
-Overfull \hbox (9.13275pt too wide) in paragraph at lines 381--381
+Overfull \hbox (9.13275pt too wide) in paragraph at lines 382--382
 []\OT1/cmr/bx/n/14.4 Expected value of $\OML/cmm/m/it/14.4 PMH$ \OT1/cmr/bx/n/1
 4.4 for Erdos-Renyi graphs 
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 381.
+(hyperref)                removing `math shift' on input line 382.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 381.
+(hyperref)                removing `math shift' on input line 382.
 
 [9]
-Overfull \hbox (14.22585pt too wide) detected at line 424
+Overfull \hbox (14.22585pt too wide) detected at line 425
 []\OT1/cmr/m/n/10 [[] \OMS/cmsy/m/n/10  \OML/cmm/m/it/10 n[]\OT1/cmr/m/n/10 ] 
 \OMS/cmsy/m/n/10  \OT1/cmr/m/n/10 2 [] [] \OMS/cmsy/m/n/10  \OT1/cmr/m/n/10 2
  [] [] = 2 [] [] \OML/cmm/m/it/10 ;
  []
 
 
-Overfull \hbox (16.90736pt too wide) detected at line 436
+Overfull \hbox (16.90736pt too wide) detected at line 437
 [] \OT1/cmr/m/n/10 + [] \OMS/cmsy/m/n/10  \OML/cmm/m/it/10 T \OT1/cmr/m/n/10 +
  \OML/cmm/m/it/10 S \OMS/cmsy/m/n/10  [] \OT1/cmr/m/n/10 + []
  []
@@ -806,10 +806,10 @@ Package rerunfilecheck Info: File `report.out' has not changed.
 (rerunfilecheck)             Checksum: B8A9611CBDFFBDFE9F5CC8C0150DE0C3;2762.
  ) 
 Here is how much of TeX's memory you used:
- 19617 strings out of 478927
- 360685 string characters out of 2852061
- 637299 words of memory out of 3000000
- 37085 multiletter control sequences out of 15000+600000
+ 19618 strings out of 478927
+ 360689 string characters out of 2852061
+ 637308 words of memory out of 3000000
+ 37086 multiletter control sequences out of 15000+600000
  413919 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  102i,11n,108p,571b,713s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -833,7 +833,7 @@ al/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/Utente/Ap
 pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users
 /Utente/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm1
 0.pfb>
-Output written on report.pdf (11 pages, 285980 bytes).
+Output written on report.pdf (11 pages, 286255 bytes).
 PDF statistics:
  247 PDF objects out of 1000 (max. 8388607)
  49 named destinations out of 1000 (max. 500000)
