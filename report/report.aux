@@ -2,10 +2,13 @@
 \providecommand\hyper@newdestlabel[2]{}
 \providecommand\HyperFirstAtBeginDocument{\AtBeginDocument}
 \HyperFirstAtBeginDocument{\ifx\hyper@anchor\@undefined
+\global\let\oldcontentsline\contentsline
+\gdef\contentsline#1#2#3#4{\oldcontentsline{#1}{#2}{#3}}
 \global\let\oldnewlabel\newlabel
 \gdef\newlabel#1#2{\newlabelxx{#1}#2}
 \gdef\newlabelxx#1#2#3#4#5#6{\oldnewlabel{#1}{{#2}{#3}}}
 \AtEndDocument{\ifx\hyper@anchor\@undefined
+\let\contentsline\oldcontentsline
 \let\newlabel\oldnewlabel
 \fi}
 \fi}
@@ -13,16 +16,44 @@
 \gdef\HyperFirstAtBeginDocument#1{#1}
 \providecommand\HyField@AuxAddToFields[1]{}
 \providecommand\HyField@AuxAddToCoFields[2]{}
+\citation{leinster2019magnitude}
+\citation{hepworth2015categorifying}
 \@writefile{toc}{\contentsline {section}{\numberline {1}Goals}{1}{section.1}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\numberline {2}Magnitude Homology framework}{1}{section.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Operative definition}{2}{subsection.2.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {3}Matrix representing $\partial _{k,\ell }$}{2}{section.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Complexity}{2}{subsection.3.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Code}{2}{subsection.3.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Experiments}{2}{subsection.3.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {4}Interpretation of the rank of $MH_{k,l}$.}{3}{section.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Diagonal $MH_{k,k}$}{3}{subsection.4.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Second diagonal $MH_{k-1,k}$}{4}{subsection.4.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {5}Problems to solve}{4}{section.5}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {6}Ideas for the future}{5}{section.6}\protected@file@percent }
-\gdef \@abspage@last{5}
+\newlabel{differential}{{1}{1}{}{theorem.1}{}}
+\citation{hepworth2015categorifying}
+\citation{hatcher2005algebraic}
+\newlabel{def_MH}{{3}{2}{}{theorem.3}{}}
+\newlabel{toyexample}{{4}{2}{}{theorem.4}{}}
+\citation{hepworth2015categorifying}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Matrix representation of $\partial _2$. The $+1$ entries are represented in purple, while the $0$ entries are filled with yellow.}}{3}{figure.1}\protected@file@percent }
+\newlabel{LowerTriangRem}{{5}{3}{}{theorem.5}{}}
+\citation{hepworth2015categorifying}
+\citation{leinster2021magnitude}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Ranks of $MH_{k,l}(C_5)$ computed using Python \textbf  {ADD GIT REF}}}{4}{table.1}\protected@file@percent }
+\newlabel{TableC5}{{1}{4}{Ranks of $MH_{k,l}(C_5)$ computed using Python \textbf {ADD GIT REF}}{table.1}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Interpretation of magnitude homology}{4}{section.3}\protected@file@percent }
+\newlabel{PMHsubgroup}{{7}{4}{}{theorem.7}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}First diagonal: counting triangles and squares}{5}{subsection.3.1}\protected@file@percent }
+\newlabel{FirstDiagonal}{{3.1}{5}{First diagonal: counting triangles and squares}{subsection.3.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Matrix representation of $\partial _2:PMC_{2,2}(G) \to PMC_{1,2}(G)$. The $+1$ entries are represented in purple, while the $0$ entries are filled with yellow.}}{6}{figure.2}\protected@file@percent }
+\newlabel{matrix_toyexample_plain}{{2}{6}{Matrix representation of $\partial _2:PMC_{2,2}(G) \to PMC_{1,2}(G)$. The $+1$ entries are represented in purple, while the $0$ entries are filled with yellow}{figure.2}{}}
+\newlabel{toyexample_triangles_squares}{{8}{6}{}{theorem.8}{}}
+\citation{hepworth2015categorifying}
+\citation{wasserman1994social}
+\citation{watts1998collective}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Second diagonal: counting 4-cliques and 5,6-``near-cliques''.}{7}{subsection.3.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4}Relation with clustering coefficients}{8}{section.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Local clustering coefficient}{8}{subsection.4.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Global clustering coefficient}{8}{subsection.4.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5}Expected value of $PMH$ for Erdos-Renyi graphs}{9}{section.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}First diagonal}{9}{subsection.5.1}\protected@file@percent }
+\bibstyle{splncs04}
+\bibdata{bibliography}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Algorithm complexity}{10}{section.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {7}Conclusions}{10}{section.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {8}Problems to solve}{10}{section.8}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {9}Ideas for the future}{10}{section.9}\protected@file@percent }
+\bibstyle{unsrt}
+\bibdata{bibliography}
+\gdef \@abspage@last{11}
