@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.8) (preloaded format=pdflatex 2021.11.9)  29 NOV 2022 16:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.8) (preloaded format=pdflatex 2021.11.9)  30 NOV 2022 11:53
 entering extended mode
 **./main_math.tex
 (main_math.tex
@@ -685,85 +685,77 @@ File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 [1
 
-{C:/Users/Utente/AppData/Local/MiKTeX/pdftex/config/pdftex.map}]
-
-LaTeX Warning: Marginpar on page 2 moved.
-
-[2]
-
-LaTeX Warning: Marginpar on page 3 moved.
-
-[3]
-<images/kernel_toy_example.png, id=35, 878.8032pt x 169.8345pt>
+{C:/Users/Utente/AppData/Local/MiKTeX/pdftex/config/pdftex.map}] [2]
+<images/kernel_toy_example.png, id=30, 878.8032pt x 169.8345pt>
 File: images/kernel_toy_example.png Graphic file (type png)
 <use images/kernel_toy_example.png>
-Package pdftex.def Info: images/kernel_toy_example.png  used on input line 197.
+Package pdftex.def Info: images/kernel_toy_example.png  used on input line 196.
 
 (pdftex.def)             Requested size: 395.4578pt x 76.4248pt.
 
-Overfull \hbox (21.93657pt too wide) in paragraph at lines 196--198
+Overfull \hbox (21.93657pt too wide) in paragraph at lines 195--197
 []  [] 
  []
 
-[4 <./images/kernel_toy_example.png>] [5] [6]
+[3] [4 <./images/kernel_toy_example.png>] [5] [6]
 <images/kernel_toy_example_plain.png, id=49, 884.5848pt x 320.1561pt>
 File: images/kernel_toy_example_plain.png Graphic file (type png)
 <use images/kernel_toy_example_plain.png>
 Package pdftex.def Info: images/kernel_toy_example_plain.png  used on input lin
-e 344.
+e 343.
 (pdftex.def)             Requested size: 353.82764pt x 128.06017pt.
 
-Overfull \hbox (6.7041pt too wide) in paragraph at lines 344--345
+Overfull \hbox (6.7041pt too wide) in paragraph at lines 343--344
  [][] 
  []
 
 [7 <./images/kernel_toy_example_plain.png>]
-Overfull \hbox (3.68428pt too wide) in paragraph at lines 381--382
+Overfull \hbox (3.68428pt too wide) in paragraph at lines 380--381
 \T1/cmr/m/n/10 That is, we are dis-re-gard-ing the tu-ples that do not con-tain
  the tri-an-gle $\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x[]; x[]; x[]\OT1/cmr/m/n/10
  )$\T1/cmr/m/n/10 ,
  []
 
-[8] [9] (main_math.bbl [10]) [11] (main_math.aux) ) 
+[8] (main_math.bbl [9]) [10] (main_math.aux) ) 
 Here is how much of TeX's memory you used:
- 15067 strings out of 478927
- 301159 string characters out of 2852061
- 590608 words of memory out of 3000000
- 32657 multiletter control sequences out of 15000+600000
+ 14953 strings out of 478927
+ 298652 string characters out of 2852061
+ 580744 words of memory out of 3000000
+ 32543 multiletter control sequences out of 15000+600000
  421233 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,11n,89p,938b,944s stack positions out of 5000i,500n,10000p,200000b,80000s
- <C:\Users\Utente\AppData\Lo
-cal\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1000.pk> <C:\Users\Utente\App
-Data\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1000.pk> <C:\Users\Ute
-nte\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Us
-ers\Utente\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm0900.pk>
- <C:\Users\Utente\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx0
-900.pk> <C:\Users\Utente\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
-0\ectt0900.pk> <C:\Users\Utente\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/e
-c/dpi600\ecrm0900.pk> <C:\Users\Utente\AppData\Local\MiKTeX\fonts/pk/ljfour/jkn
-appen/ec/dpi600\ecrm1000.pk> <C:\Users\Utente\AppData\Local\MiKTeX\fonts/pk/ljf
-our/jknappen/ec/dpi600\ecbx1440.pk><C:/Users/Utente/AppData/Local/Programs/MiKT
-eX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Utente/AppData/Local/Pro
-grams/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Utente/AppData
-/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/Utent
-e/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Us
-ers/Utente/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.p
-fb><C:/Users/Utente/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/c
-m/cmmi9.pfb><C:/Users/Utente/AppData/Local/Programs/MiKTeX/fonts/type1/public/a
-msfonts/cm/cmmib10.pfb><C:/Users/Utente/AppData/Local/Programs/MiKTeX/fonts/typ
-e1/public/amsfonts/cm/cmr10.pfb><C:/Users/Utente/AppData/Local/Programs/MiKTeX/
-fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/Utente/AppData/Local/Programs
-/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/Utente/AppData/Local/
-Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/Utente/AppDat
-a/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/Utent
-e/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/U
-sers/Utente/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.
-pfb><C:/Users/Utente/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/
-cm/cmsy9.pfb>
-Output written on main_math.pdf (11 pages, 334910 bytes).
+ 84i,11n,89p,572b,691s stack positions out of 5000i,500n,10000p,200000b,80000s
+ <C:\Users\Utente\AppData\Local\M
+iKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1000.pk> <C:\Users\Utente\AppData\
+Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1000.pk> <C:\Users\Utente\A
+ppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\U
+tente\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm0900.pk> <C:\
+Users\Utente\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx0900.p
+k> <C:\Users\Utente\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ect
+t0900.pk> <C:\Users\Utente\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi
+600\ecrm0900.pk> <C:\Users\Utente\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen
+/ec/dpi600\ecrm1000.pk> <C:\Users\Utente\AppData\Local\MiKTeX\fonts/pk/ljfour/j
+knappen/ec/dpi600\ecbx1440.pk><C:/Users/Utente/AppData/Local/Programs/MiKTeX/fo
+nts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Utente/AppData/Local/Programs
+/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Utente/AppData/Loca
+l/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/Utente/App
+Data/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/U
+tente/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C
+:/Users/Utente/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmm
+i9.pfb><C:/Users/Utente/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
+ts/cm/cmmib10.pfb><C:/Users/Utente/AppData/Local/Programs/MiKTeX/fonts/type1/pu
+blic/amsfonts/cm/cmr10.pfb><C:/Users/Utente/AppData/Local/Programs/MiKTeX/fonts
+/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/Utente/AppData/Local/Programs/MiKT
+eX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/Utente/AppData/Local/Progr
+ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/Utente/AppData/Loc
+al/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/Utente/App
+Data/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/
+Utente/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><
+C:/Users/Utente/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cm
+sy9.pfb>
+Output written on main_math.pdf (10 pages, 327376 bytes).
 PDF statistics:
- 502 PDF objects out of 1000 (max. 8388607)
+ 491 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  23 words of extra memory for PDF output out of 10000 (max. 10000000)
 
