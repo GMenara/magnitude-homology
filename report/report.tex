@@ -32,7 +32,8 @@
 	
 	\section{Goals}
 	\begin{enumerate}
-		\item Develop a library to efficiently compute magnitude homology. To do this we construct a matrix representing the MH boundary operator.
+		\item Develop a tool to efficiently compute magnitude homology. To do this we start by constructing a matrix representing the MH boundary operator.
+		
 		\item Use MH for network analysis. Our hope is that MH can give us information about the structure of a network and how a particular structure influences information flow.
 	\end{enumerate}
 	
@@ -449,7 +450,7 @@
 	
 	\bibliographystyle{splncs04}
 	\bibliography{bibliography}
-	
+		
 	\section{Problems to solve}
 	
 	\begin{enumerate}
@@ -464,21 +465,21 @@
 	\begin{itemize}
 		\item Construct a time series using active nodes of a network
 		\item Detect small cycles and cliques using MH
-		\item Detect persistent structures using PH
+		\item Detect persistent structures and see how they influence the information flow.
 	\end{itemize}
 
 	\item Prove that (see if.. but I think so) MH is a stable tool:
 	\begin{itemize}
-		\item Define an "interaction index" which should be a measure the tendency of a general vertex $v$ to interact with other vertices in the graph (maybe taking inspiration from connectivity index [ADD RED] and cycle index [ADD RED]). Maybe the global clustering coefficient can be used?
+		\item Define an ``interaction index" which should be a measure the tendency of a general vertex $v$ to interact with other vertices in the graph (maybe taking inspiration from connectivity index [ADD REF] and cycle index [ADD REF]). Maybe the global clustering coefficient can be used?
 		\item Define a distance between two graphs $G$ and $G'$ using the interaction index
 		\item See if a small variation in the interaction implies a small variation in MH
 		\item Maybe define a "MH diagram" following the idea of persistence diagrams and do the above point for this MH diagram  
 	\end{itemize}
+
+	\item Define MH for graphons (i.e. limits of sequences of dense graphs). 
+	This definition should arise naturally as a consequence of the definitions of MH for graphs and metric spaces, but an explicit construction has yet to be provided.
 	
 \end{enumerate}
 
-	
-\bibliographystyle{unsrt}
-\bibliography{bibliography}
 
 \end{document}

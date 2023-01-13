@@ -1,0 +1,30 @@
+\begin{thebibliography}{1}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+\providecommand{\doi}[1]{https://doi.org/#1}
+
+\bibitem{hatcher2005algebraic}
+Hatcher, A.: Algebraic topology (2005)
+
+\bibitem{hepworth2015categorifying}
+Hepworth, R., Willerton, S.: Categorifying the magnitude of a graph. arXiv
+  preprint arXiv:1505.04125  (2015)
+
+\bibitem{leinster2019magnitude}
+Leinster, T.: The magnitude of a graph. In: Mathematical Proceedings of the
+  Cambridge Philosophical Society. vol.~166, pp. 247--264. Cambridge University
+  Press (2019)
+
+\bibitem{leinster2021magnitude}
+Leinster, T., Shulman, M.: Magnitude homology of enriched categories and metric
+  spaces. Algebraic \& Geometric Topology  \textbf{21}(5),  2175--2221 (2021)
+
+\bibitem{wasserman1994social}
+Wasserman, S., Faust, K., et~al.: Social network analysis: Methods and
+  applications  (1994)
+
+\bibitem{watts1998collective}
+Watts, D.J., Strogatz, S.H.: Collective dynamics of ‘small-world’networks.
+  nature  \textbf{393}(6684),  440--442 (1998)
+
+\end{thebibliography}
