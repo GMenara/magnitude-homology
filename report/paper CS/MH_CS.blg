@@ -1,5 +1,0 @@
-[0] Config.pm:311> INFO - This is Biber 2.16
-[0] Config.pm:314> INFO - Logfile is 'MH_CS.blg'
-[138] biber-MSWIN64:340> INFO - === 
-[594] Utils.pm:411> ERROR - Cannot find 'MH_CS.bcf'!
-[594] Biber.pm:132> INFO - ERRORS: 1
