@@ -21,7 +21,12 @@ function boundary(G,k,l)
         if is_seq == true   
             length = 0
             for i in 1:k
-                length = length + nx.shortest_path_length(G, possible_chain[i], possible_chain[i + 1])
+                try
+                    length = length + nx.shortest_path_length(G, possible_chain[i], possible_chain[i + 1])
+                catch
+                    is_seq = false
+                end
+                #length = length + nx.shortest_path_length(G, possible_chain[i], possible_chain[i + 1])
                 if length > l
                     break
                 end
@@ -45,7 +50,12 @@ function boundary(G,k,l)
         if is_seq ==true
             length = 0
             for i in 1:k-1
-                length = length + nx.shortest_path_length(G, possible_chain[i], possible_chain[i + 1])
+                try
+                    length = length + nx.shortest_path_length(G, possible_chain[i], possible_chain[i + 1])
+                catch
+                    is_seq = false
+                end
+                #length = length + nx.shortest_path_length(G, possible_chain[i], possible_chain[i + 1])
                 if length > l
                     break
                 end
@@ -59,15 +69,23 @@ function boundary(G,k,l)
 
     row_vec_kl = Array{Int}(undef,0)
     col_vec_kl = Array{Int}(undef,0)
+    data_kl = Array{Int}(undef,0)
 
     for k_chain_idx in 1:length(MC_kl)
         k_chain = MC_kl[k_chain_idx]
+        is_seq = true
         #println(k_chain)
         for vertex_idx in 2:length(k_chain) - 1
     
             #if removing a vertex does not change the length of a path
-            if nx.shortest_path_length(G, k_chain[vertex_idx - 1], k_chain[vertex_idx + 1]) == nx.shortest_path_length(G,k_chain[vertex_idx - 1],k_chain[vertex_idx]) + nx.shortest_path_length(G, k_chain[vertex_idx], k_chain[vertex_idx + 1])
-                
+            #if nx.shortest_path_length(G, k_chain[vertex_idx - 1], k_chain[vertex_idx + 1]) == nx.shortest_path_length(G,k_chain[vertex_idx - 1],k_chain[vertex_idx]) + nx.shortest_path_length(G, k_chain[vertex_idx], k_chain[vertex_idx + 1])
+            try
+                nx.shortest_path_length(G, k_chain[vertex_idx - 1], k_chain[vertex_idx + 1]) == nx.shortest_path_length(G,k_chain[vertex_idx - 1],k_chain[vertex_idx]) + nx.shortest_path_length(G, k_chain[vertex_idx], k_chain[vertex_idx + 1])
+            catch
+                is_seq = false
+            end
+    
+            if is_seq == true
                 #if the k-tuple with the vertex removed is part of MC_{k-1,l}
                 kminus1_chain = collect(np.delete(k_chain, vertex_idx-1))
                 #println(kminus1_chain)
@@ -82,13 +100,13 @@ function boundary(G,k,l)
                     #println(row_vec_kl,row_index)
                     push!(col_vec_kl,k_chain_idx)
                     #println(col_vec_kl,k_chain_idx)
+                    push!(data_kl,(-1)^vertex_idx)
                 end
             end
         end
     end
 
     if length(col_vec_kl) > 0
-        values_vec_kl = ones(length(col_vec_kl))
         cols_of_sparse_kl = last(col_vec_kl)
     elseif length(col_vec_kl) == 0
         cols_of_sparse_kl = 0
@@ -97,7 +115,7 @@ function boundary(G,k,l)
     if row_vec_kl == Array{Int}(undef,0) && col_vec_kl == Array{Int}(undef,0)
         bdry_mtx_kl = zeros((1, 1))
     else
-        bdry_mtx_kl = sparse(row_vec_kl, col_vec_kl, values_vec_kl)
+        bdry_mtx_kl = sparse(row_vec_kl, col_vec_kl, data_kl)
     end
 
     return bdry_mtx_kl, col_vec_kl, cols_of_sparse_kl, length(MC_kl)

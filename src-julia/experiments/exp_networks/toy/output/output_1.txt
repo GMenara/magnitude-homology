@@ -1,0 +1,3 @@
+homology of active subgraph of G at time step 1for k=0 and l=0 is 2
+homology of active subgraph of G at time step 1for k=1 and l=1 is 1
+homology of active subgraph of G at time step 1for k=2 and l=2 is 0

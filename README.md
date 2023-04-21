@@ -1,4 +1,4 @@
-# Magnitude Homology Calculations
+# Magnitude Homology
 
 Code for graph magnitude homology calculations.
 - "MH using sage.ipynb" contains the py3 version of the code implemented by Simon Willerton and James Cranch. Code is implemented in Sagemath 9.3 (based on Python 3.9).
